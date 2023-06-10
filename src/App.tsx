@@ -1,6 +1,6 @@
 import Navbar from "./components/Navbar"
 import { Routes, Route } from 'react-router-dom'
-import Profile from "./pages/Profile"
+import Todos from "./pages/Todos"
 import Settings from "./pages/Settings"
 import { FC } from "react"
 import Posts from "./pages/Posts"
@@ -14,7 +14,7 @@ const App: FC = () => {
       <Routes>
         <Route path="/posts" element={<Posts />} />
         <Route path="/post/:id" element={<PostDetails />} />
-        <Route path="/profile" element={<Profile />} />
+        <Route path="/todos" element={<Todos />} />
         <Route path="/settings" element={<Settings />} />
       </Routes>
     </div>

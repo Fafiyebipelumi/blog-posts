@@ -21,8 +21,8 @@ const Navbar: FC = () => {
             <Link to="/posts" style={{ textDecoration: 'none', paddingRight: 20, color: '#000' }}>
                 Posts
             </Link>
-            <Link to="/profile" style={{ textDecoration: 'none', paddingRight: 20, color: '#000' }}>
-                Profile
+            <Link to="/todos" style={{ textDecoration: 'none', paddingRight: 20, color: '#000' }}>
+                Todos
             </Link>
             <Link to="/settings" style={{ textDecoration: 'none', paddingRight: 20, color: '#000' }}>
                 Settings
