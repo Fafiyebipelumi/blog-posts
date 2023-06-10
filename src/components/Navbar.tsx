@@ -9,6 +9,10 @@ const Navbar: FC = () => {
             alignItems="center"
             padding={16}
             borderBottom="default"
+            position="sticky"
+            top={0}
+            zIndex={1}
+            backgroundColor="white"
         >
             <Heading size={600}>My App</Heading>
 

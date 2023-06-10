@@ -1,12 +1,11 @@
 import { FC, useEffect, useState } from 'react';
-import { Pane } from 'evergreen-ui'
+import { Pane, Text } from 'evergreen-ui'
 import axios from '../hooks/axios'
 import Post from '../components/Post';
-// import { IPosts } from '../interfaces/Posts.interface';
 
 const Posts: FC = () => {
 
-    const GET_ALL_POSTS: string = '/posts'
+    const GET_ALL_POSTS: string = '/posts?_limit=20'
 
     const [posts, setPosts] = useState([]);
     const [isLoading, setIsLoading] = useState<boolean>(false)
@@ -36,8 +35,8 @@ const Posts: FC = () => {
     }, [])
 
     return (
-        <Pane>
-            <div>All Posts</div>
+        <Pane display='flex' alignItems='center' justifyContent='center' flexDirection='column'>
+            <Text textAlign='center' fontSize={20} marginY={20} textTransform='uppercase'>All Posts</Text>
             {isLoading && <p>Loading...</p>}
             {error && <span>{error}</span>}
             <Post posts={posts} />
